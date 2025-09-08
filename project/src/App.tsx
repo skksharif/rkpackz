@@ -11,6 +11,7 @@ import {
   Instagram,
   Twitter,
 } from "lucide-react";
+import RotatingGallery from "./RotatingGallery";
 
 function App() {
   const [isVisible, setIsVisible] = useState({});
@@ -515,6 +516,9 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/*Gallery*/}
+      <RotatingGallery/>
 
       {/* Why Choose Us Section */}
       <section id="why-choose-us" className="py-20 bg-white">
