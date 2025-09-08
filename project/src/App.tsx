@@ -517,8 +517,15 @@ function App() {
         </div>
       </section>
 
+      <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center py-[10px]">Our Sample Products</h2>
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center px-[10px]">
+        Leading manufacturer of premium non-woven bags with our own
+        state-of-the-art manufacturing unit, dedicated to quality and
+        eco-friendly solutions.
+      </p>
+
       {/*Gallery*/}
-      <RotatingGallery/>
+      <RotatingGallery />
 
       {/* Why Choose Us Section */}
       <section id="why-choose-us" className="py-20 bg-white">
