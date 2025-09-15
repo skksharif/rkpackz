@@ -311,10 +311,10 @@ function App() {
           </div>
         </div>
       </section>
-
       {/* About Section */}
       <section id="about" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Main Title */}
           <div
             className={`text-center mb-16 ${
               isVisible.about ? "animate-fade-in-up" : "opacity-0"
@@ -324,16 +324,41 @@ function App() {
               About RK Packz
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Leading manufacturer of premium non-woven bags with our own
-              state-of-the-art manufacturing unit, dedicated to quality and
-              eco-friendly solutions.
+              At RK Packz, we are passionate about delivering premium non-woven
+              bags that are stylish, durable, and eco-friendly. Backed by our
+              own state-of-the-art manufacturing unit, we ensure every bag
+              reflects quality and brand identity.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Our Journey */}
+          <div
+            className={`mb-16 ${
+              isVisible.about ? "animate-fade-in-up-delay-1" : "opacity-0"
+            }`}
+          >
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+              Our Journey
+            </h3>
+            <p className="text-gray-600 mb-4">
+              Our roots trace back to 2013, when we began as RK Industries,
+              manufacturing rice bags with in-house printing. Over time, we
+              expanded into a wide range of bag solutions, constantly upgrading
+              our machines, materials, and processes to keep pace with evolving
+              customer and market needs.
+            </p>
+            <p className="text-gray-600">
+              This represents our commitment to delivering not just bags, but
+              innovative branding solutions that help businesses stand out.
+            </p>
+          </div>
+
+          {/* Our Manufacturing Excellence & Why RK Packz */}
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Our Manufacturing Excellence */}
             <div
-              className={`${
-                isVisible.about ? "animate-fade-in-up-delay-1" : "opacity-0"
+              className={` ${
+                isVisible.about ? "animate-fade-in-up-delay-2" : "opacity-0"
               }`}
             >
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">
@@ -350,7 +375,7 @@ function App() {
                     </h4>
                     <p className="text-gray-600">
                       Complete control over quality with our own manufacturing
-                      facility
+                      facility.
                     </p>
                   </div>
                 </div>
@@ -365,7 +390,7 @@ function App() {
                     </h4>
                     <p className="text-gray-600">
                       Sustainable non-woven fabrics that are environmentally
-                      conscious
+                      conscious and reusable.
                     </p>
                   </div>
                 </div>
@@ -379,45 +404,69 @@ function App() {
                       Premium Quality
                     </h4>
                     <p className="text-gray-600">
-                      Rigorous quality checks ensure durability and brand
-                      representation
+                      Rigorous checks guarantee durability and superior brand
+                      representation.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
+            {/* Why RK Packz */}
             <div
-              className={`${
-                isVisible.about ? "animate-fade-in-up-delay-2" : "opacity-0"
+              className={` ${
+                isVisible.about ? "animate-fade-in-up-delay-3" : "opacity-0"
               }`}
             >
-              <div className="bg-gradient-to-br from-teal-50 to-orange-50 p-8 rounded-2xl">
-                <div className="grid grid-cols-2 gap-6 text-center">
-                  <div className="bg-white p-6 rounded-xl shadow-sm">
-                    <div className="text-3xl font-bold text-teal-600 mb-2">
-                      500+
-                    </div>
-                    <div className="text-gray-700">Happy Clients</div>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+                Why RK Packz?
+              </h3>
+              <ul className="list-disc list-inside text-gray-600 space-y-3">
+                <li>
+                  A legacy of trust, innovation, and flexibility since 2013.
+                </li>
+                <li>Trusted by over 500+ happy clients and growing.</li>
+                <li>Strong legacy built over a decade of innovation.</li>
+                <li>
+                  Flexibility to meet custom needs and deliver unique,
+                  experimental designs.
+                </li>
+                <li>Commitment to sustainability, quality, and style.</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Statistics Section */}
+          <div
+            className={`mt-20 ${
+              isVisible.about ? "animate-fade-in-up-delay-4" : "opacity-0"
+            }`}
+          >
+            <div className="bg-gradient-to-br from-teal-50 to-orange-50 p-8 rounded-2xl">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <div className="text-3xl font-bold text-teal-600 mb-2">
+                    500+
                   </div>
-                  <div className="bg-white p-6 rounded-xl shadow-sm">
-                    <div className="text-3xl font-bold text-orange-500 mb-2">
-                      10K+
-                    </div>
-                    <div className="text-gray-700">Bags Produced Daily</div>
+                  <div className="text-gray-700">Happy Clients</div>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <div className="text-3xl font-bold text-orange-500 mb-2">
+                    10K+
                   </div>
-                  <div className="bg-white p-6 rounded-xl shadow-sm">
-                    <div className="text-3xl font-bold text-teal-600 mb-2">
-                      50+
-                    </div>
-                    <div className="text-gray-700">Design Options</div>
+                  <div className="text-gray-700">Bags Produced Daily</div>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <div className="text-3xl font-bold text-teal-600 mb-2">
+                    50+
                   </div>
-                  <div className="bg-white p-6 rounded-xl shadow-sm">
-                    <div className="text-3xl font-bold text-orange-500 mb-2">
-                      24/7
-                    </div>
-                    <div className="text-gray-700">Support</div>
+                  <div className="text-gray-700">Design Options</div>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <div className="text-3xl font-bold text-orange-500 mb-2">
+                    24/7
                   </div>
+                  <div className="text-gray-700">Support</div>
                 </div>
               </div>
             </div>
@@ -444,7 +493,7 @@ function App() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 align-items-stretch">
             {[
               {
                 title: "Clothing Brands",
@@ -469,7 +518,7 @@ function App() {
               },
               {
                 title: "All-Purpose",
-                desc: "Versatile bags for any business",
+                desc: "Versatile bags for any business purpose",
                 color: "orange",
                 icon: ShoppingBag,
                 delay: 3,
@@ -504,9 +553,9 @@ function App() {
 
                 <button
                   className={`w-full bg-gradient-to-r from-${
-                    category.color === "teal" ? "teal" : "orange"
+                    category.color === "orange" ? "orange" : "orange"
                   }-500 to-${
-                    category.color === "teal" ? "orange" : "teal"
+                    category.color === "orange" ? "orange" : "orange"
                   }-500 text-white py-3 rounded-full hover:shadow-lg transition-all duration-300 group-hover:scale-105`}
                 >
                   View Collection
@@ -517,7 +566,9 @@ function App() {
         </div>
       </section>
 
-      <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center py-[10px]">Our Sample Products</h2>
+      <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center py-[10px]">
+        Our Sample Products
+      </h2>
       <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center px-[10px]">
         Leading manufacturer of premium non-woven bags with our own
         state-of-the-art manufacturing unit, dedicated to quality and
