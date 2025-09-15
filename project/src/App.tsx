@@ -212,9 +212,15 @@ function App() {
             </nav>
 
             {/* CTA Button */}
-            <button className="bg-gradient-to-r from-teal-600 to-orange-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 animate-pulse-cta">
-              Get Quote
-            </button>
+            <a
+              href="mailto:rkindustriespkl@gmail.com?subject=Inquiry%20about%20Bags&body=Hi%2C%0A%0AI%20have%20visited%20your%20website%20and%20would%20like%20to%20know%20more%20about%20the%20bags%20you%20offer.%20Please%20share%20more%20details.%0A%0AThank%20you.%0A"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-gradient-to-r from-teal-600 to-orange-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 animate-pulse-cta">
+                Get Quote
+              </button>
+            </a>
           </div>
         </div>
       </header>
@@ -257,9 +263,15 @@ function App() {
                 isVisible.hero ? "animate-fade-in-up-delay-2" : "opacity-0"
               }`}
             >
-              <button className="bg-gradient-to-r from-orange-500 to-teal-600 text-white px-12 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 shadow-xl animate-pulse-cta">
-                Get a Quote
-              </button>
+              <a
+                href="mailto:rkindustriespkl@gmail.com?subject=Inquiry%20about%20Bags&body=Hi%2C%0A%0AI%20have%20visited%20your%20website%20and%20would%20like%20to%20know%20more%20about%20the%20bags%20you%20offer.%20Please%20share%20more%20details.%0A%0AThank%20you.%0A"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-gradient-to-r from-orange-500 to-teal-600 text-white px-12 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 shadow-xl animate-pulse-cta">
+                  Get a Quote
+                </button>
+              </a>
             </div>
 
             {/* Hero Bags Animation */}
@@ -727,13 +739,22 @@ function App() {
                 </p>
 
                 <div className="space-y-4">
-                  <button className="w-full bg-white text-teal-600 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 animate-bounce-gentle">
-                    📱 WhatsApp Us
-                  </button>
+                  <a
+                    href="https://wa.me/917799988088?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
+                  >
+                    <button className="w-full bg-white text-teal-600 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 animate-bounce-gentle">
+                      📱 WhatsApp Us
+                    </button>
+                  </a>
 
-                  <button className="w-full bg-transparent border-2 border-white text-white py-4 rounded-full font-semibold hover:bg-white hover:text-teal-600 transition-all duration-300">
-                    📞 Call Now
-                  </button>
+                  <a href="tel:+917799988088" className="w-full">
+                    <button className="w-full bg-transparent border-2 border-white text-white py-4 rounded-full font-semibold hover:bg-white hover:text-teal-600 transition-all duration-300">
+                      📞 Call Now
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
