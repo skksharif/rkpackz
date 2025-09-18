@@ -243,12 +243,18 @@ function App() {
           <FloatingBag delay={1} direction={2} />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 mt-[10px] sm:px-6 lg:px-8 flex flex-col items-center text-center">
+             <img
+                  src="/logo.jpg"
+                  alt="RK Packz Logo"
+                  className="w-[180px] rounded-xl object-cover"
+                />
           <div
             id="hero"
             className={`${isVisible.hero ? "animate-fade-in-up" : "opacity-0"}`}
           >
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+               
+            <h1 className="text-4xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Bags That <span className="text-gradient">Speak Your Brand</span>
             </h1>
 
@@ -278,7 +284,7 @@ function App() {
 
             {/* Hero Bags Animation */}
             <div
-              className={`mt-16 flex justify-center space-x-8 ${
+              className={`mt-[40px] flex justify-center space-x-8 ${
                 isVisible.hero ? "animate-fade-in-up-delay-3" : "opacity-0"
               }`}
             >

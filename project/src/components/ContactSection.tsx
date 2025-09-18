@@ -56,37 +56,55 @@ export default function ContactSection({ isVisible }: { isVisible: any }) {
             <h3 className="text-2xl font-semibold mb-8">Contact Information</h3>
 
             <div className="space-y-6">
-              <div className="flex items-start space-x-4">
+              {/* Address */}
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=7/126+Canal+road,+Near+Palakol,+Jinnuru+-+534265"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start space-x-4"
+              >
                 <div className="bg-white/20 p-3 rounded-full">
                   <MapPin className="text-white" size={24} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">Address</h4>
-                  <p className="text-teal-100">
+                  <div className="text-teal-100 hover:underline">
                     7/126 Canal road, Near Palakol, Jinnuru - 534265
-                  </p>
+                  </div>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-start space-x-4">
+              {/* Phone */}
+              <a
+                href="tel:+917799988088"
+                className="flex items-start space-x-4"
+              >
                 <div className="bg-white/20 p-3 rounded-full">
                   <Phone className="text-white" size={24} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">Phone</h4>
-                  <p className="text-teal-100">+91 77999 88088</p>
+                  <div className="text-teal-100 hover:underline">
+                    +91 77999 88088
+                  </div>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-start space-x-4">
+              {/* Email */}
+              <a
+                href="mailto:info@rkpackz.com"
+                className="flex items-start space-x-4"
+              >
                 <div className="bg-white/20 p-3 rounded-full">
                   <Mail className="text-white" size={24} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-lg">Email</h4>
-                  <p className="text-teal-100">info@rkpackz.com</p>
+                  <div className="text-teal-100 hover:underline">
+                    info@rkpackz.com
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
