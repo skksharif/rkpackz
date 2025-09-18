@@ -10,8 +10,10 @@ import {
   Facebook,
   Instagram,
   Twitter,
+  Contact,
 } from "lucide-react";
 import RotatingGallery from "./RotatingGallery";
+import ContactSection from "./components/ContactSection";
 
 function App() {
   const [isVisible, setIsVisible] = useState({});
@@ -563,21 +565,24 @@ function App() {
                   {category.desc}
                 </p>
 
-                <button
-                  className={`w-full bg-gradient-to-r from-${
-                    category.color === "orange" ? "orange" : "orange"
-                  }-500 to-${
-                    category.color === "orange" ? "orange" : "orange"
-                  }-500 text-white py-3 rounded-full hover:shadow-lg transition-all duration-300 group-hover:scale-105`}
-                >
-                  View Collection
-                </button>
+                <a href="#gallery">
+                  <button
+                    className={`w-full bg-gradient-to-r from-${
+                      category.color === "orange" ? "orange" : "orange"
+                    }-500 to-${
+                      category.color === "orange" ? "orange" : "orange"
+                    }-500 text-white py-3 rounded-full hover:shadow-lg transition-all duration-300 group-hover:scale-105`}
+                  >
+                    View Collection
+                  </button>
+                </a>
               </div>
             ))}
           </div>
+          <div className="text-center m-[60px]" id="gallery"></div>
         </div>
       </section>
-
+      <div className="text-center m-[30px]"></div>
       <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center py-[10px]">
         Our Sample Products
       </h2>
@@ -588,6 +593,7 @@ function App() {
       </p>
 
       {/*Gallery*/}
+
       <RotatingGallery />
 
       {/* Why Choose Us Section */}
@@ -665,102 +671,8 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section
-        id="contact"
-        className="py-20 bg-gradient-to-br from-teal-600 to-orange-500 text-white"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            className={`text-center mb-16 ${
-              isVisible.contact ? "animate-fade-in-up" : "opacity-0"
-            }`}
-          >
-            <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
-            <p className="text-xl text-teal-100">
-              Ready to elevate your brand with premium non-woven bags?
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div
-              className={`${
-                isVisible.contact ? "animate-fade-in-up-delay-1" : "opacity-0"
-              }`}
-            >
-              <h3 className="text-2xl font-semibold mb-8">
-                Contact Information
-              </h3>
-
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-white/20 p-3 rounded-full">
-                    <MapPin className="text-white" size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg">Address</h4>
-                    <p className="text-teal-100">
-                      7/126 Canal road, Near Palakol, Jinnuru - 534265
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-white/20 p-3 rounded-full">
-                    <Phone className="text-white" size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg">Phone</h4>
-                    <p className="text-teal-100">+91 77999 88088</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-white/20 p-3 rounded-full">
-                    <Mail className="text-white" size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg">Email</h4>
-                    <p className="text-teal-100">info@rkpackz.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className={`text-center ${
-                isVisible.contact ? "animate-fade-in-up-delay-2" : "opacity-0"
-              }`}
-            >
-              <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
-                <h3 className="text-2xl font-semibold mb-6">Ready to Start?</h3>
-                <p className="mb-8 text-teal-100">
-                  Contact us for a free quote and let's create bags that speak
-                  your brand!
-                </p>
-
-                <div className="space-y-4">
-                  <a
-                    href="https://wa.me/917799988088?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full"
-                  >
-                    <button className="w-full bg-white text-teal-600 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 animate-bounce-gentle">
-                      📱 WhatsApp Us
-                    </button>
-                  </a>
-
-                  <a href="tel:+917799988088" className="w-full">
-                    <button className="w-full bg-transparent border-2 border-white text-white py-4 rounded-full font-semibold hover:bg-white hover:text-teal-600 transition-all duration-300">
-                      📞 Call Now
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ContactSection isVisible={isVisible}  />
+  
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
@@ -832,7 +744,7 @@ function App() {
               </div>
 
               <div className="text-gray-400">
-                <p>📧 info@rkpackz.com</p>
+                <p>📧 rkindustriespkl@gmail.com</p>
                 <p>📱 +91 77999 88088</p>
               </div>
             </div>
