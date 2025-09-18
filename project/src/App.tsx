@@ -690,7 +690,7 @@ function App() {
               </div>
 
               <p className="text-gray-300 mb-4 font-medium">
-                "Where Every Bag Speaks Your Brand"
+                "Bags That Speak Your Brand"
               </p>
 
               <p className="text-gray-400">
