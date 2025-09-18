@@ -58,7 +58,7 @@ export default function ContactSection({ isVisible }: { isVisible: any }) {
             <div className="space-y-6">
               {/* Address */}
               <a
-                href="https://www.google.com/maps/search/?api=1&query=7/126+Canal+road,+Near+Palakol,+Jinnuru+-+534265"
+                href="https://maps.app.goo.gl/CqmVwezGViaMRvbX7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start space-x-4"
@@ -92,7 +92,7 @@ export default function ContactSection({ isVisible }: { isVisible: any }) {
 
               {/* Email */}
               <a
-                href="mailto:info@rkpackz.com"
+                href="mailto:rkindustriespkl@gmail.com"
                 className="flex items-start space-x-4"
               >
                 <div className="bg-white/20 p-3 rounded-full">
@@ -101,7 +101,7 @@ export default function ContactSection({ isVisible }: { isVisible: any }) {
                 <div>
                   <h4 className="font-semibold text-lg">Email</h4>
                   <div className="text-teal-100 hover:underline">
-                    info@rkpackz.com
+                    rkindustriespkl@gmail.com
                   </div>
                 </div>
               </a>
