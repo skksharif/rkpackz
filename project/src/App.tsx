@@ -215,7 +215,7 @@ function App() {
 
             {/* CTA Button */}
             <a
-              href="mailto:rkindustriespkl@gmail.com?subject=Inquiry%20about%20Bags&body=Hi%2C%0A%0AI%20have%20visited%20your%20website%20and%20would%20like%20to%20know%20more%20about%20the%20bags%20you%20offer.%20Please%20share%20more%20details.%0A%0AThank%20you.%0A"
+              href="https://wa.me/917799988088?text=Hello%20RK%20Industries%2C%0A%0AI%20am%20interested%20in%20your%20non-woven%20bags.%20Could%20you%20please%20share%20your%20catalog%2C%20pricing%2C%20and%20customization%20options%3F%0A%0AThank%20you."
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -244,16 +244,15 @@ function App() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 mt-[10px] sm:px-6 lg:px-8 flex flex-col items-center text-center">
-             <img
-                  src="/logo.jpg"
-                  alt="RK Packz Logo"
-                  className="w-[180px] rounded-xl object-cover"
-                />
+          <img
+            src="/logo.jpg"
+            alt="RK Packz Logo"
+            className="w-[180px] rounded-xl object-cover"
+          />
           <div
             id="hero"
             className={`${isVisible.hero ? "animate-fade-in-up" : "opacity-0"}`}
           >
-               
             <h1 className="text-4xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Bags That <span className="text-gradient">Speak Your Brand</span>
             </h1>
@@ -272,7 +271,7 @@ function App() {
               }`}
             >
               <a
-                href="mailto:rkindustriespkl@gmail.com?subject=Inquiry%20about%20Bags&body=Hi%2C%0A%0AI%20have%20visited%20your%20website%20and%20would%20like%20to%20know%20more%20about%20the%20bags%20you%20offer.%20Please%20share%20more%20details.%0A%0AThank%20you.%0A"
+                href="https://wa.me/917799988088?text=Hello%20RK%20Industries%2C%0A%0AI%20am%20interested%20in%20your%20non-woven%20bags.%20Could%20you%20please%20share%20your%20catalog%2C%20pricing%2C%20and%20customization%20options%3F%0A%0AThank%20you."
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -677,8 +676,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <ContactSection isVisible={isVisible}  />
-  
+      <ContactSection isVisible={isVisible} />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
@@ -738,28 +736,39 @@ function App() {
             <div>
               <h3 className="text-lg font-semibold mb-6">Connect With Us</h3>
               <div className="flex space-x-4 mb-6">
-                <div className="bg-gray-800 p-3 rounded-full hover:bg-teal-600 transition-colors cursor-pointer">
-                  <Facebook size={20} />
+                <div className="bg-gray-800 p-3 rounded-full hover:bg-pink-500 transition-colors cursor-pointer">
+                  <a
+                    href="https://www.instagram.com/rkindustriespkl?igsh=MnR2eTd3Z2toa29k"
+                    className="flex items-start space-x-4"
+                  >
+                    <Instagram size={24} />
+                  </a>
                 </div>
-                <div className="bg-gray-800 p-3 rounded-full hover:bg-orange-500 transition-colors cursor-pointer">
-                  <Instagram size={20} />
+                <div className="bg-gray-800 p-3 rounded-full hover:bg-red-700 transition-colors cursor-pointer">
+                  <a
+                    href="mailto:rkindustriespkl@gmail.com"
+                    className="flex items-start space-x-4"
+                  >
+                    <Mail className="text-white" size={24} />
+                  </a>
                 </div>
-                <div className="bg-gray-800 p-3 rounded-full hover:bg-teal-600 transition-colors cursor-pointer">
-                  <Twitter size={20} />
+                <div className="bg-gray-800 p-3 rounded-full hover:bg-blue-500 transition-colors cursor-pointer">
+                  <a
+                    href="tel:+917799988088"
+                    className="flex items-start space-x-4"
+                  >
+                    <Phone className="text-white" size={24} />
+                  </a>
                 </div>
               </div>
 
-              <div className="text-gray-400">
-                <p>📧 rkindustriespkl@gmail.com</p>
-                <p>📱 +91 77999 88088</p>
-              </div>
+              <div className="text-gray-400"></div>
             </div>
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
             <p className="text-gray-400">
-              © 2024 RK Packz. All rights reserved. | Designed with ❤️ for your
-              brand success.
+              © 2024 RK Packz. All rights reserved.
             </p>
           </div>
         </div>

@@ -1,10 +1,11 @@
-import { MapPin, Phone, Mail, Send, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
 import { useState } from "react";
 
 export default function ContactSection({ isVisible }: { isVisible: any }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",   // ✅ added phone
     message: "",
   });
 
@@ -16,10 +17,10 @@ export default function ContactSection({ isVisible }: { isVisible: any }) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const { name, email, message } = formData;
+    const { name, email, phone, message } = formData;
 
     // WhatsApp text message formatting
-    const whatsappMessage = `Hello, I would like to get in touch.%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Message:* ${message}`;
+    const whatsappMessage = `Hello, I would like to get in touch.%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Message:* ${message}`;
 
     // Correct wa.me link
     const whatsappUrl = `https://wa.me/917799988088?text=${whatsappMessage}`;
@@ -75,10 +76,7 @@ export default function ContactSection({ isVisible }: { isVisible: any }) {
               </a>
 
               {/* Phone */}
-              <a
-                href="tel:+917799988088"
-                className="flex items-start space-x-4"
-              >
+              <a href="tel:+917799988088" className="flex items-start space-x-4">
                 <div className="bg-white/20 p-3 rounded-full">
                   <Phone className="text-white" size={24} />
                 </div>
@@ -135,6 +133,16 @@ export default function ContactSection({ isVisible }: { isVisible: any }) {
                   name="email"
                   placeholder="Your Email"
                   value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 rounded-lg bg-white/20 text-white placeholder-teal-100 focus:outline-none focus:ring-2 focus:ring-white"
+                />
+                {/* ✅ Phone input */}
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Your Phone"
+                  value={formData.phone}
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg bg-white/20 text-white placeholder-teal-100 focus:outline-none focus:ring-2 focus:ring-white"
